@@ -30,7 +30,7 @@ Ball.prototype.update = function () { ///// Fixed spelling error: function ////f
   this.y = constrain(this.y,0,height-this.size);
 
   // Check for touching upper or lower edge and reverse velocity if so
-  if (this.y = 0 || this.y + this.size === height) {
+  if (this.y === 0 || this.y + this.size === height) { ////fixed added ==
     this.vy = -this.vy;
   }
 }
