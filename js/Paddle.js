@@ -6,7 +6,7 @@
 //Paddle constructor /// fixed added: // for comment
 
 //Sets the properties with the provided arguments or defaults /////fixed added: // for comment
-function Pladdle(x,y,w,h,speed,downKey,upKey) {
+function Paddle(x,y,w,h,speed,downKey,upKey) { ////Fixed spelling error Paddle
   this.x = x;
   this.y = y;
   this.xv = 0;
