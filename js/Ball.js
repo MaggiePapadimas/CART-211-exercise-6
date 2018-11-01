@@ -39,7 +39,7 @@ Ball.prototype.update = function () { ///// Fixed spelling error: function ////f
 //
 // Checks if the ball has moved off the screen and, if so, returns true.
 // Otherwise it returns false.
-Ball.prototype.IsOffScreen = function () { /////fixed uppdercased I (IsOffScreen)
+Ball.prototype.isOffScreen = function () { /////MY MISTAKE******* IGNORE FIRST PUSH ABOUT THIS LINE
   // Check for going off screen and reset if so
   if (this.x + this.size < 0 && this.x > width) { ///Fixed spelling error if ///fixed +
     return true;
