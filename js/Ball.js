@@ -69,7 +69,7 @@ Ball.prototype.handleCollision = function(paddle) { ///Fixed too many parenthese
       this.x -= this.vx;
       this.y -= this.vy;
       // Reverse x velocity to bounce
-      this.vx = this.vx;
+      this.vx = -this.vx; /////Fixed added (-)this.vx to reverse velocity
     }
   }
 }
