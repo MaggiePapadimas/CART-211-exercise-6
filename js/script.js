@@ -44,7 +44,7 @@ function draw() {
   rightPaddle.update();
 
   if (ball.isOffTheScreen){ ////fixed too many parentheses ////Fixed added curly bracket*
-    reset();
+    ball.reset(); ////fixed ball.reset
   }
 
   ball.handleCollision(leftPaddle);
