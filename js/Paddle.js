@@ -36,7 +36,7 @@ Paddle.prototype.handleInput = function() { /////fixed spelling error: prototype
 // Constrain the resulting position to be within the canvas
 Paddle.prototype.update = function() {
   this.y += this.vy;
-  this.y = constraint(this.y,0,height-this.h); //////fixed spelling error: height
+  this.y = constrain(this.y,0,height-this.h); //////fixed spelling error: height //////Fixed spelling error constrain
 }
 
 // display()
