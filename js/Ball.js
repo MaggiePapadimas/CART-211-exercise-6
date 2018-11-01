@@ -23,7 +23,7 @@ function Ball(x,y,vx,vy,size,speed) {
 // off left or right side.
 Ball.prototype.update = function () { ///// Fixed spelling error: function ////fixed spelling error: update
   // Update position with velocity
-  this.x = this.vx;
+  this.x += this.vx; //////Fixed added +
   this.y += this.vy;
 
   // Constrain y position to be on screen
