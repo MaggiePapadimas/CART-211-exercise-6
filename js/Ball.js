@@ -41,7 +41,7 @@ Ball.prototype.update = function () { ///// Fixed spelling error: function ////f
 // Otherwise it returns false.
 Ball.prototype.IsOffScreen = function () { /////fixed uppdercased I (IsOffScreen)
   // Check for going off screen and reset if so
-  if (this.x + this.size < 0 && this.x > width) { ///Fixed spelling error if ///fixed + 
+  if (this.x + this.size < 0 && this.x > width) { ///Fixed spelling error if ///fixed +
     return true;
   }
   else {
@@ -53,7 +53,7 @@ Ball.prototype.IsOffScreen = function () { /////fixed uppdercased I (IsOffScreen
 //
 // Draw the ball as a rectangle on the screen
 Ball.prototype.display = function () {
-  rect(this.x this.y);
+  rect(this.x, this.y); ////fixed added ","
 }
 
 // handleCollision(paddle)
