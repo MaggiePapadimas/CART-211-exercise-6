@@ -41,7 +41,7 @@ Ball.prototype.update = function () { ///// Fixed spelling error: function ////f
 // Otherwise it returns false.
 Ball.prototype.isOffScreen = function () { /////MY MISTAKE******* IGNORE FIRST PUSH ABOUT THIS LINE
   // Check for going off screen and reset if so
-  if (this.x + this.size < 0 && this.x > width) { ///Fixed spelling error if ///fixed +
+  if (this.x + this.size < 0 || this.x > width) { ///Fixed spelling error if ///fixed + ///Fixed exchanged && for ||
     return true;
   }
   else {
