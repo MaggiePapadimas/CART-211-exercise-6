@@ -26,7 +26,7 @@ Paddle.prototype.handleInput = function() { /////fixed spelling error: prototype
   if (keyIsDown(this.upKey)) { //////Fixed added this. ///////fixed added Is (KeyIsDown)
     this.vy = -this.speed;
   }
-  else if (keyDown(this.downKey)) { //////Fixed added this.
+  else if (keyIsDown(this.downKey)) { //////Fixed added this. //////Fixed added Is (KeyIsDown)
     this.vy = -this.speed;
   }
 }
