@@ -50,7 +50,9 @@ function draw() {
   ball.handleCollision(leftPaddle);
   ball.handleCollision(rightPaddle);
 
-  ball.display();
   leftPaddle.display();
   rightPaddle.display(); ////Fixed closed parentheses
+
+  ball.display(); /////Fixed moved ball.display
+
 }
