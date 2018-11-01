@@ -43,7 +43,7 @@ function draw() {
   leftPaddle.update();
   rightPaddle.update();
 
-  if (ball.isOffTheScreen(){ ////fixed too many parentheses ////Fixed added curly bracket* 
+  if (ball.isOffTheScreen){ ////fixed too many parentheses ////Fixed added curly bracket*
     reset();
   }
 
@@ -52,5 +52,5 @@ function draw() {
 
   ball.display();
   leftPaddle.display();
-  rightPaddle.display(;
+  rightPaddle.display(); ////Fixed closed parentheses
 }
