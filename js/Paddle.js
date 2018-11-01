@@ -43,5 +43,5 @@ Paddle.prototype.update = function() {
 //
 // Draw the paddle as a rectangle on the screen
 Paddle.prototype.display = function() { /////fixed spelling error: display //// fixed too many parentheses
-  rectangle(this.x,this.y,this.w,this.h);
+  rect(this.x,this.y,this.w,this.h); ////fixed spelling error: rect
 }
