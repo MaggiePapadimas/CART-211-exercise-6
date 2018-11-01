@@ -43,7 +43,7 @@ function draw() {
   leftPaddle.update();
   rightPaddle.update();
 
-  if (ball.isOffTheScreen(); ////fixed too many parentheses ////Fixed added semi-colon
+  if (ball.isOffTheScreen(){ ////fixed too many parentheses ////Fixed added curly bracket* 
     reset();
   }
 
