@@ -3,9 +3,9 @@
 // A class that defines how a paddle behaves, including the ability
 // to specify the input keys to move it up and down
 
-//Paddle constructor /// fixed
+//Paddle constructor /// fixed added: // for comment
 
-//Sets the properties with the provided arguments or defaults /////fixed
+//Sets the properties with the provided arguments or defaults /////fixed added: // for comment
 function Pladdle(x,y,w,h,speed,downKey,upKey) {
   this.x = x;
   this.y = y;
@@ -13,7 +13,7 @@ function Pladdle(x,y,w,h,speed,downKey,upKey) {
   this.yv = 0;
   this.w = w;
   this.h = h;
-  this.speed = speed; // fixed
+  this.speed = speed; // fixed spelling error: speed
   this.downKey = downKey;
   this.upKey = upKey;
 }
@@ -36,7 +36,7 @@ Paddle.prototype.handleInput = function() { /////fixed spelling error: prototype
 // Constrain the resulting position to be within the canvas
 Paddle.prototype.update = function() {
   this.y += this.vy;
-  this.y = constraint(this.y,0,hight-this.h);
+  this.y = constraint(this.y,0,height-this.h); //////fixed spelling error: height
 }
 
 // display()
