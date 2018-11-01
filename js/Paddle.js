@@ -23,7 +23,7 @@ function Pladdle(x,y,w,h,speed,downKey,upKey) {
 // Check if the up or down keys are pressed and update velocity
 // appropriately
 Paddle.prototype.handleInput = function() { /////fixed spelling error: prototype
-  if (keyDown(this.upKey)) { //////Fixed added this.
+  if (keyIsDown(this.upKey)) { //////Fixed added this. ///////fixed added Is (KeyIsDown)
     this.vy = -this.speed;
   }
   else if (keyDown(this.downKey)) { //////Fixed added this.
