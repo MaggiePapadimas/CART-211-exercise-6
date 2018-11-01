@@ -43,7 +43,7 @@ function draw() {
   leftPaddle.update();
   rightPaddle.update();
 
-  if (ball.isOffScreen){ ////fixed: too many parentheses ////fixed: added curly bracket*/////Fixed spelling error isBallOffScreen
+  if (ball.isOffScreen()){ ////fixed: too many parentheses ////fixed: added curly bracket*/////Fixed spelling error isBallOffScreen ///fixed added closed parentheses
     ball.reset(); ////fixed: ball.reset
   }
 
