@@ -21,16 +21,16 @@ function Ball(x,y,vx,vy,size,speed) {
 // Moves according to velocity, constrains y to be on screen,
 // checks for bouncing on upper or lower edgs, checks for going
 // off left or right side.
-Ball.prototype.update = function () { ///// Fixed spelling error: function ////fixed spelling error: update
+Ball.prototype.update = function () { ///// fixed: spelling error: function ////fixed: spelling error: update
   // Update position with velocity
-  this.x += this.vx; //////Fixed added +
+  this.x += this.vx; //////fixed: added +
   this.y += this.vy;
 
   // Constrain y position to be on screen
   this.y = constrain(this.y,0,height-this.size);
 
   // Check for touching upper or lower edge and reverse velocity if so
-  if (this.y === 0 || this.y + this.size === height) { ////fixed added ==
+  if (this.y === 0 || this.y + this.size === height) { ////fixed: added ==
     this.vy = -this.vy;
   }
 }
@@ -41,7 +41,7 @@ Ball.prototype.update = function () { ///// Fixed spelling error: function ////f
 // Otherwise it returns false.
 Ball.prototype.isOffScreen = function () { /////MY MISTAKE******* IGNORE FIRST PUSH ABOUT THIS LINE
   // Check for going off screen and reset if so
-  if (this.x + this.size < 0 || this.x > width) { ///Fixed spelling error if ///fixed + ///Fixed exchanged && for ||
+  if (this.x + this.size < 0 || this.x > width) { ///fixed: spelling error if ///fixed: + ///fixed: exchanged && for ||
     return true;
   }
   else {
@@ -53,14 +53,14 @@ Ball.prototype.isOffScreen = function () { /////MY MISTAKE******* IGNORE FIRST P
 //
 // Draw the ball as a rectangle on the screen
 Ball.prototype.display = function () {
-  rect(this.x, this.y, this.size, this.size); ////fixed added "," /// added this.size
+  rect(this.x, this.y, this.size, this.size); ////fixed: added "," /// added this.size
 }
 
 // handleCollision(paddle)
 //
 // Check if this ball overlaps the paddle passed as an argument
 // and if so reverse x velocity to bounce
-Ball.prototype.handleCollision = function(paddle) { ///Fixed too many parentheses ///ixed spelling error: prototype
+Ball.prototype.handleCollision = function(paddle) { ///fixed: too many parentheses ///ixed spelling error: prototype
   // Check if the ball overlaps the paddle on x axis
   if (this.x + this.size > paddle.x && this.x < paddle.x + paddle.w) {
     // Check if the ball overlaps the paddle on y axis
@@ -69,7 +69,7 @@ Ball.prototype.handleCollision = function(paddle) { ///Fixed too many parenthese
       this.x -= this.vx;
       this.y -= this.vy;
       // Reverse x velocity to bounce
-      this.vx = -this.vx; /////Fixed added (-)this.vx to reverse velocity
+      this.vx = -this.vx; /////fixed: added (-)this.vx to reverse velocity
     }
   }
 }
@@ -77,7 +77,7 @@ Ball.prototype.handleCollision = function(paddle) { ///Fixed too many parenthese
 // reset()
 //
 // Set position back to the middle of the screen
-Ball.prototype.reset = function () { ///fixed spelling error: reset
+Ball.prototype.reset = function () { ///fixed: spelling error: reset
   this.x = width/2;
   this.y = height/2;
 }
